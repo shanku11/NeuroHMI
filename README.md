@@ -1,40 +1,36 @@
-# Next-Generation Control Interface (HMI) Prototype
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This document outlines the architecture for a modern, intelligent Control System Interface (HMI) that addresses the shortcomings of traditional HMIs, specifically focusing on alert fatigue, lack of personalization, and outdated interaction patterns.
+## Getting Started
 
-## Goal Description
+First, run the development server:
 
-Build a high-fidelity, interactive web-based prototype demonstrating the "Next-Generation Control Interface". The prototype features a premium, dynamic UI using modern design principles (Glassmorphism, dark mode, smooth animations) and demonstrates intelligent alarm management, role-based views, and a modular widget configuration feel.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Technology Stack
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-> [!IMPORTANT]
-> **Technology Stack**: To ensure the most fluid, user-friendly, and best UI interaction experience possible, the application has been built using:
-> - **Next.js (React)**: For robust component-based architecture and state management.
-> - **Tailwind CSS (v4)**: For a highly customized, premium dark-mode design system with glassmorphism.
-> - **Framer Motion**: For smooth, cinematic micro-animations and transitions.
-> - **Recharts**: For real-time telemetry data visualization.
-> - **Lucide React**: For crisp, modern iconography.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Architecture
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-The project is structured as a Next.js App Router application:
+## Learn More
 
-### Core Application (`src/app/`)
-- `layout.tsx`: The main shell containing the Sidebar and Header.
-- `page.tsx`: The main entry point rendering the Dashboard component.
-- `globals.css`: Contains the premium design system variables and custom scrollbar styles.
+To learn more about Next.js, take a look at the following resources:
 
-### Components (`src/components/`)
-- **`Sidebar.tsx`**: Expandable navigation menu with animated alerts.
-- **`Header.tsx`**: Context-aware top bar featuring simulated role switching (Lead Operator, Maintenance, Plant Manager) and search.
-- **`Dashboard.tsx`**: The main view orchestrating the layout of all widgets.
-- **`AlarmList.tsx`**: A simulated intelligent alarm feed that prioritizes critical alerts and displays AI diagnostic insights.
-- **`TelemetryWidget.tsx`**: An interactive area chart demonstrating live equipment data (e.g., vibration analysis) with critical spike highlights.
-- **`PredictiveMaintenanceWidget.tsx`**: Visualizes machine health and AI-calculated time-to-failure metrics.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Verification & Testing
-- The application is currently running at `http://localhost:3000`.
-- **Role Switching**: Clicking different roles in the header updates the user context.
-- **Visuals**: The UI features glowing accents, glass panels, and smooth hover states.
-- **Responsiveness**: The dashboard adjusts seamlessly to different screen sizes.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
