@@ -92,7 +92,7 @@ export function Header() {
             title="AI Config Copilot"
           >
             <Sparkles className="w-4 h-4" />
-            <span className="hidden xl:inline">AI Copilot</span>
+            <span className="hidden xl:inline">AI Chatbot</span>
           </button>
         </div>
 
@@ -120,7 +120,7 @@ export function Header() {
           </button>
           <div className="flex items-center gap-3">
             <div className="text-right hidden md:block">
-              <div className="text-sm font-medium text-white">Alex Chen</div>
+              <div className="text-sm font-medium text-white">InDepth Developers</div>
               <div className="text-xs text-accent">{role}</div>
             </div>
             <UserCircle className="w-8 h-8 text-zinc-400" />
